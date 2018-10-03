@@ -6,7 +6,7 @@ import javax.swing.*;
  * The idea is that when the program runs, a small window appears. You can:
  * 1) Save a new password and username pair to the bank
  * 2) Enter a username and get the password matching that.
- * 3) Enter a password and get the username matching that.
+ * 3) Delete an existing username and it's password
  *
  * @author Logan Czernel
  * @since 02-10-2018
@@ -19,7 +19,7 @@ public class Main {
      * Runs the program.
      */
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         JFrame appScreen = new JFrame("Password Bank");
         JTextField t1, t2;
         t1 = new JTextField("Welcome to Logan's Password Bank!");
@@ -33,6 +33,7 @@ public class Main {
         appScreen.setVisible(true);
 
         PasswordBank newBank = new PasswordBank();
+        newBank.addPair("username5", "password5");
         System.out.println(newBank.bank);
     }
 }
