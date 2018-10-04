@@ -32,8 +32,13 @@ public class Main {
         appScreen.setLayout(null);
         appScreen.setVisible(true);
 
+        // Temporary testing for new methods
         PasswordBank newBank = new PasswordBank();
-        newBank.addPair("username5", "password5");
-        System.out.println(newBank.bank);
+        String bankResponse = newBank.addPair("username5", "password5");
+        System.out.println(bankResponse);
+        bankResponse = newBank.deletePair("username10");
+        System.out.println(bankResponse);
+        bankResponse = newBank.getPair("username62");
+        System.out.println(bankResponse);
     }
 }

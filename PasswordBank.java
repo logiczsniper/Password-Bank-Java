@@ -10,7 +10,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 /**
- * This file is the script that interacts with the actual password bank which is a json file.
+ * This file is the script that interacts with the actual password bank which is a json file. To do this, it stores a
+ * hash map which will be created based off the json data, modified based on user input, and then written to update
+ * the json file.
  *
  * @author Logan Czernel
  * @since 02-10-2018
@@ -26,9 +28,14 @@ class PasswordBank {
      * Get a password with a provided username.
      */
 
-    HashMap<String, String> bank;
+    private HashMap<String, String> bank;
     private Gson gson = new GsonBuilder().create();
 
+    /**
+     * Upon init, read from the json file and save the hash map in a variable.
+     *
+     * @throws Exception a warning to stop the program. If the json file cannot be read, the program will not work.
+     */
     PasswordBank() throws Exception {
 
         try {
@@ -39,16 +46,61 @@ class PasswordBank {
         }
     }
 
-    void addPair(String username, String password) throws Exception {
+    /**
+     * Adds the given username and password to the json file.
+     *
+     * @param username the username to be added.
+     * @param password the password to be added.
+     * @return a string that will be displayed to the user that notifies them of the outcome.
+     * @throws Exception stops the program if the json file could not be written to.
+     */
+    String addPair(String username, String password) throws Exception {
+
+        if (bank.get(username) != null) {
+            return "The credentials are already saved!";
+        }
 
         bank.put(username, password);
 
         try (FileWriter file = new FileWriter("bank.json")) {
             file.write(gson.toJson(bank));
+            return "The credentials have been added!";
         } catch (IOException ioe) {
             throw new Exception("Failed to write to json file");
         }
+    }
 
+    /**
+     * Deletes the username and password pair given the username.
+     *
+     * @param username the username that corresponds to the credentials to be deleted.
+     * @return a string that will be displayed to the user that notifies them of the outcome.
+     * @throws Exception stops the program if the json file could not be written to.
+     */
+    String deletePair(String username) throws Exception {
+
+        if (bank.get(username) == null) {
+            return "The credentials do not exist!";
+        }
+
+        bank.remove(username);
+
+        try (FileWriter file = new FileWriter("bank.json")) {
+            file.write(gson.toJson(bank));
+            return "The credentials have been deleted!";
+        } catch (IOException ioe) {
+            throw new Exception("Failed to write to json file");
+        }
+    }
+
+    /**
+     * Retrieves the password of the given username.
+     *
+     * @param username the username that corresponds to the desired password.
+     * @return the password of the given username.
+     */
+    String getPair(String username) {
+        return bank.get(username);
     }
 }
 
