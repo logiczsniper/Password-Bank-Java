@@ -39,7 +39,8 @@ class PasswordBank {
     PasswordBank() throws Exception {
 
         try {
-            Type type = new TypeToken<HashMap<String, String>>(){}.getType();
+            Type type = new TypeToken<HashMap<String, String>>() {
+            }.getType();
             bank = gson.fromJson(new FileReader("bank.json"), type);
         } catch (FileNotFoundException e) {
             throw new Exception("Failed to open to json file");
@@ -55,6 +56,14 @@ class PasswordBank {
      * @throws Exception stops the program if the json file could not be written to.
      */
     String addPair(String username, String password) throws Exception {
+
+        if (username.equals("") && password.equals("")) {
+            return "Please enter a username and password!";
+        } else if (username.equals("")) {
+            return "Please enter a username.";
+        } else if (password.equals("")) {
+            return "Please enter a password";
+        }
 
         if (bank.get(username) != null) {
             return "The credentials are already saved!";
@@ -100,7 +109,30 @@ class PasswordBank {
      * @return the password of the given username.
      */
     String getPair(String username) {
-        return bank.get(username);
+
+        if (bank.get(username) != null) {
+            return "Password: " + bank.get(username);
+        } else {
+            return "There are no credentials associated with that username!";
+        }
+    }
+
+    /**
+     * Empties out the password bank.
+     *
+     * @return a string that will be displayed to the user that notifies them of the outcome.
+     * @throws Exception stops the program if the json file could not be written to.
+     */
+    String clearBank() throws Exception {
+
+        bank.clear();
+
+        try (FileWriter file = new FileWriter("bank.json")) {
+            file.write(gson.toJson(bank));
+            return "All credentials have been deleted!";
+        } catch (IOException ioe) {
+            throw new Exception("Failed to write to json file");
+        }
     }
 }
 

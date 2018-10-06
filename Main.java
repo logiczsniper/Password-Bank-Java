@@ -19,26 +19,108 @@ public class Main {
      * Runs the program.
      */
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         JFrame appScreen = new JFrame("Password Bank");
-        JTextField t1, t2;
-        t1 = new JTextField("Welcome to Logan's Password Bank!");
-        t1.setBounds(50, 100, 200, 30);
-        t2 = new JTextField("Yo.");
-        t2.setBounds(50, 150, 200, 30);
-        appScreen.add(t1);
-        appScreen.add(t2);
-        appScreen.setSize(400, 400);
+
+        // Get a password from a username
+        JLabel usernameLabel = new JLabel("Username: ");
+        usernameLabel.setBounds(20, 20, 80, 30);
+        appScreen.add(usernameLabel);
+
+        JButton getPasswordButton = new JButton("Get Password");
+        getPasswordButton.setBounds(100, 60, 200, 30);
+
+        final JTextField userInput = new JTextField();
+        userInput.setBounds(100,20, 200,30);
+        appScreen.add(userInput);
+
+        getPasswordButton.addActionListener(e -> {
+            try {
+                PasswordBank newBank = new PasswordBank();
+                String bankResponse;
+                bankResponse = newBank.getPair(userInput.getText());
+                JOptionPane.showMessageDialog(appScreen, bankResponse);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        });
+        appScreen.add(getPasswordButton);
+
+        // Add a username and password pair
+        usernameLabel = new JLabel("Username: ");
+        usernameLabel.setBounds(20, 140, 80, 30);
+        appScreen.add(usernameLabel);
+
+        final JTextField userInputTwo = new JTextField();
+        userInputTwo.setBounds(100,140, 200,30);
+        appScreen.add(userInputTwo);
+
+        usernameLabel = new JLabel("Password: ");
+        usernameLabel.setBounds(20, 180, 80, 30);
+        appScreen.add(usernameLabel);
+
+        JPasswordField newPassword = new JPasswordField();
+        newPassword.setBounds(100, 180, 200, 30);
+        appScreen.add(newPassword);
+
+        JButton addPairButton = new JButton("Add Credentials");
+        addPairButton.setBounds(100, 220, 200, 30);
+
+        addPairButton.addActionListener(e -> {
+            try {
+                PasswordBank newBank = new PasswordBank();
+                String bankResponse;
+                bankResponse = newBank.addPair(userInputTwo.getText(), new String(newPassword.getPassword()));
+                JOptionPane.showMessageDialog(appScreen, bankResponse);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        });
+        appScreen.add(addPairButton);
+
+        // Delete username and password pair
+        usernameLabel = new JLabel("Username: ");
+        usernameLabel.setBounds(20, 300, 80, 30);
+        appScreen.add(usernameLabel);
+
+        JButton deletePairButton = new JButton("Delete Credentials");
+        deletePairButton.setBounds(100, 340, 200, 30);
+
+        final JTextField userInputThree = new JTextField();
+        userInputThree.setBounds(100,300, 200,30);
+        appScreen.add(userInputThree);
+
+        deletePairButton.addActionListener(e -> {
+            try {
+                PasswordBank newBank = new PasswordBank();
+                String bankResponse;
+                bankResponse = newBank.deletePair(userInputThree.getText());
+                JOptionPane.showMessageDialog(appScreen, bankResponse);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        });
+        appScreen.add(deletePairButton);
+
+        // Clear all credentials
+        JButton deleteAllButton = new JButton("Clear All Credentials");
+        deleteAllButton.setBounds(100, 420, 200, 30);
+
+        deleteAllButton.addActionListener(e -> {
+            try {
+                PasswordBank newBank = new PasswordBank();
+                String bankResponse;
+                bankResponse = newBank.clearBank();
+                JOptionPane.showMessageDialog(appScreen, bankResponse);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        });
+        appScreen.add(deleteAllButton);
+
+
+        appScreen.setSize(400, 600);
         appScreen.setLayout(null);
         appScreen.setVisible(true);
-
-        // Temporary testing for new methods
-        PasswordBank newBank = new PasswordBank();
-        String bankResponse = newBank.addPair("username5", "password5");
-        System.out.println(bankResponse);
-        bankResponse = newBank.deletePair("username10");
-        System.out.println(bankResponse);
-        bankResponse = newBank.getPair("username62");
-        System.out.println(bankResponse);
     }
 }
