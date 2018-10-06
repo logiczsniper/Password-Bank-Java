@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f9ef584-9447-42d5-a87a-3be57a2619f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Logan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/.idea/dictionaries/Logan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/button-sound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/myfile.mf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/password-bank-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/password_bank.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/PasswordBankTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Password-Bank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Password-Bank.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/.idea/dictionaries/Logan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/.idea/dictionaries/Logan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/bank.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/bank.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/Password-Bank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/Password-Bank.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +30,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6151" />
+          <entry key="groovy" value="1055" />
+          <entry key="java" value="6160" />
           <entry key="json" value="18" />
           <entry key="md" value="2422" />
           <entry key="mf" value="12" />
@@ -49,7 +39,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6151" />
+          <entry key="Groovy" value="1055" />
+          <entry key="JAVA" value="6160" />
           <entry key="JSON" value="18" />
           <entry key="Manifest" value="12" />
           <entry key="Markdown" value="2422" />
@@ -58,9 +49,10 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="9" />
+          <entry key="groovy" value="1" />
           <entry key="iml" value="2" />
           <entry key="java" value="5" />
-          <entry key="json" value="4" />
+          <entry key="json" value="6" />
           <entry key="md" value="1" />
           <entry key="mf" value="2" />
         </counts>
@@ -68,9 +60,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="9" />
+          <entry key="Groovy" value="1" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="5" />
-          <entry key="JSON" value="4" />
+          <entry key="JSON" value="6" />
           <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -79,46 +72,75 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="170">
-                <caret line="12" column="69" lean-forward="true" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PasswordBank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.68973213">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="538">
+                  <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="476">
+                    <caret line="30" selection-start-line="30" selection-end-line="30" />
+                  </first_editor>
+                  <second_editor>
+                    <markdownNavigatorState />
+                  </second_editor>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/PasswordBank.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/PasswordBankTest.groovy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-34">
+                  <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+                  <folding>
+                    <element signature="e#0#21#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/bank.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -135,12 +157,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/PasswordBank.java" />
-        <option value="$PROJECT_DIR$/bank.json" />
         <option value="$PROJECT_DIR$/Main.java" />
         <option value="$PROJECT_DIR$/myfile.mf" />
         <option value="$PROJECT_DIR$/out/myfile.mf" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/bank.json" />
+        <option value="$PROJECT_DIR$/PasswordBank.java" />
+        <option value="$PROJECT_DIR$/tests/PasswordBankTest.groovy" />
       </list>
     </option>
   </component>
@@ -152,7 +175,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -189,6 +212,10 @@
           <expand>
             <path>
               <item name="Password-Bank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Password-Bank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Password-Bank" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -213,22 +240,31 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538835539130" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538846203783" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/gson-2.8.5.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lczer\Desktop\Password-Bank\main\src" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lczer\Desktop\Password-Bank\main\src" />
       <recent name="C:\Users\lczer\Desktop\Password-Bank\main\src\com\company\main" />
       <recent name="C:\Users\lczer\Desktop\Password-Bank" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lczer\Desktop\Password-Bank\main\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,19 +279,64 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Password-Bank" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PasswordBankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Password-Bank" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordBankTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordBankTest.testClearBank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Password-Bank" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordBankTest" />
+      <option name="METHOD_NAME" value="testClearBank" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordBankTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Password-Bank" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordBankTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordBankTests.testDeletePair" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Password-Bank" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordBankTests" />
+      <option name="METHOD_NAME" value="testDeletePair" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.PasswordBankTest" />
+      <item itemvalue="JUnit.PasswordBankTest.testClearBank" />
+      <item itemvalue="JUnit.PasswordBankTests.testDeletePair" />
+      <item itemvalue="JUnit.PasswordBankTests" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PasswordBankTests" />
+        <item itemvalue="JUnit.PasswordBankTests.testDeletePair" />
+        <item itemvalue="JUnit.PasswordBankTest" />
+        <item itemvalue="JUnit.PasswordBankTest.testClearBank" />
       </list>
     </recent_temporary>
   </component>
@@ -272,6 +353,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="PasswordBankTest_testClearBank - 2018.10.06 at 18h 02m 22s.xml">
+      <configuration name="PasswordBankTest.testClearBank" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTest_testClearBank - 2018.10.06 at 18h 02m 28s.xml">
+      <configuration name="PasswordBankTest.testClearBank" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTest - 2018.10.06 at 18h 02m 36s.xml">
+      <configuration name="PasswordBankTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTests_testDeletePair - 2018.10.06 at 18h 05m 43s.xml">
+      <configuration name="PasswordBankTests.testDeletePair" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTests_testDeletePair - 2018.10.06 at 18h 05m 50s.xml">
+      <configuration name="PasswordBankTests.testDeletePair" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTests - 2018.10.06 at 18h 05m 56s.xml">
+      <configuration name="PasswordBankTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTests - 2018.10.06 at 18h 06m 07s.xml">
+      <configuration name="PasswordBankTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTests - 2018.10.06 at 18h 06m 11s.xml">
+      <configuration name="PasswordBankTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTests - 2018.10.06 at 18h 06m 15s.xml">
+      <configuration name="PasswordBankTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordBankTests - 2018.10.06 at 18h 06m 20s.xml">
+      <configuration name="PasswordBankTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -283,7 +396,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1688" y="-386" width="1696" height="1036" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17848411" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -343,23 +455,6 @@
     <entry file="file://$PROJECT_DIR$/PasswordBank.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bank.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PasswordBank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myfile.mf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -369,16 +464,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/Main.class">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/myfile.mf">
       <provider selected="true" editor-type-id="text-editor">
@@ -391,12 +476,49 @@
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="12" column="69" lean-forward="true" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <first_editor relative-caret-position="476">
+            <caret line="30" selection-start-line="30" selection-end-line="30" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PasswordBank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/PasswordBankTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
